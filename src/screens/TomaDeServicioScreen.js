@@ -1,18 +1,18 @@
 import { StyleSheet, Text, View, Button } from 'react-native'
 import React from 'react'
 
-const CategoriesScreen = ({navigation}) => {
+const TomaDeServicioScreen = ({navigation}) => {
   return (
     <View>
-      <Text>CategoriesScreen</Text>
-      <Button title = "Ir a Products" onPress = {()=>{
-        navigation.navigate("Products")
+      <Text>TOMA DE SERVICIO</Text>
+      <Button title = "IR A FORMULARIO" onPress = {()=>{
+        navigation.navigate("FORMULARIO")
       }}></Button>
     </View>
   )
 }
 
-export default CategoriesScreen
+export default TomaDeServicioScreen
 
 const styles = StyleSheet.create({
   screen:{

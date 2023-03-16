@@ -1,15 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const BreadDetailScreen = () => {
+const FormTomaScreen = () => {
   return (
     <View>
-      <Text>BreadDetailScreen</Text>
+      <Text>FORMULARIO</Text>
     </View>
   )
 }
 
-export default BreadDetailScreen
+export default FormTomaScreen
 
 const styles = StyleSheet.create({
   screen:{
