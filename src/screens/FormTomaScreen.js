@@ -3,7 +3,7 @@ import React from 'react'
 
 const FormTomaScreen = () => {
   return (
-    <View>
+    <View style={styles.screen}>
       <Text>FORMULARIO</Text>
     </View>
   )

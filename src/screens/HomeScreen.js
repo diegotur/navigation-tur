@@ -1,13 +1,14 @@
-import { StyleSheet, Text, View, Pressable } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import Buttons from '../components/Button'
 
 const HomeScreen = ({navigation}) => {
   return (
     <View style = {styles.screen}>
       <Text style = {styles.screenText}>RECEPCIÓN Y ENTREGA DE LA UNIDAD DEL CONDUCTOR</Text>
-      <Pressable style = {styles.screenButton} title = "IR A TOMA DE SERVICIO" onPress = {()=>{
+      <Buttons title = "IR A TOMA DE SERVICIO" onPress = {()=>{
         navigation.navigate("TOMA DE SERVICIO")
-      }}></Pressable>
+      }}></Buttons>
     </View>
   )
 }
@@ -19,11 +20,17 @@ const styles = StyleSheet.create({
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
+      backgroundColor: "green",
+      
   },
   screenText:{
-    fontSize: 20,
-    color: "white",
+    fontSize: 36,
+    textAlign: "center",
+    color: "green",
+    borderWidth: 2,
+    marginTop: -150,
+    backgroundColor: "white",
+    marginBottom: 300,
   },
-  screenButton:{
-  }
+    
 })

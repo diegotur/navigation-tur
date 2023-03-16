@@ -11,7 +11,7 @@ const Stack = createNativeStackNavigator();
 const ShopNavigator = () => {
   return (
     <NavigationContainer>
-        <Stack.Navigator initialRouteName="RECEPCIÓN Y ENTREGA DE LA UNIDAD DEL CONDUCTOR">
+        <Stack.Navigator initialRouteName="RECEPCIÓN Y ENTREGA DE LA UNIDAD DEL CONDUCTOR" >
             <Stack.Screen name="RECEPCIÓN Y ENTREGA DE LA UNIDAD DEL CONDUCTOR" component={HomeScreen} />
             <Stack.Screen name="TOMA DE SERVICIO" component={TomaDeServicioScreen} />
             <Stack.Screen name="FORMULARIO" component={FormTomaScreen} />
