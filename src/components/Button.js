@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     buttonText: {
         color: "white",
         alignItems: "center",
-        fontSize: 17,
+        fontSize: 25,
     },
     
 });

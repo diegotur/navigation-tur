@@ -4,7 +4,8 @@ import React from 'react'
 const FormTomaScreen = () => {
   return (
     <View style={styles.screen}>
-      <Text>FORMULARIO</Text>
+      <Text style={styles.screenText}>FORMULARIO</Text>
+      <Image source={require('../..assets/Tome.png')}/>
     </View>
   )
 }
@@ -15,6 +16,16 @@ const styles = StyleSheet.create({
   screen:{
       flex: 1,
       justifyContent: 'center',
-      alignItems: 'center'
-  }
+      alignItems: 'center',
+      backgroundColor: "green"
+  },
+  screenText:{
+    fontSize: 56,
+    textAlign: "center",
+    color: "green",
+    borderWidth: 2,
+    marginTop: -350,
+    backgroundColor: "white",
+    marginBottom: 300,
+  },
 })
