@@ -1,14 +1,17 @@
-import { StyleSheet, Text, View, Button } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Buttons from '../components/Button'
+import Colors from '../constants/Colors'
+import { buttonStyle, buttonTextStyle } from '../constants/Styles'
 
-const TomaDeServicioScreen = ({navigation}) => {
+const TomaDeServicioScreen = ({ navigation }) => {
   return (
     <View style={styles.screen}>
       <Text style={styles.screenText}>TOMA DE SERVICIO</Text>
-      <Buttons title = "IR A FORMULARIO" onPress = {()=>{
-        navigation.navigate("FORMULARIO")
-      }}></Buttons>
+      <Buttons styleButtonType={styles.button}
+        styleButtonTextType={styles.buttonText} title="IR A FORMULARIO" onPress={() => {
+          navigation.navigate("FORMULARIO")
+        }}></Buttons>
     </View>
   )
 }
@@ -16,20 +19,27 @@ const TomaDeServicioScreen = ({navigation}) => {
 export default TomaDeServicioScreen
 
 const styles = StyleSheet.create({
-  screen:{
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: "green",
+  screen: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: Colors.accent,
+
 
   },
-  screenText:{
+  screenText: {
     fontSize: 56,
     textAlign: "center",
-    color: "green",
+    color: Colors.primary,
     borderWidth: 2,
-    marginTop: -150,
     backgroundColor: "white",
     marginBottom: 300,
+  },
+  button: {
+    ...buttonStyle,
+    marginTop: 50,
+  },
+  buttonText: {
+    ...buttonTextStyle,
   },
 })
