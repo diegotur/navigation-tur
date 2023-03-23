@@ -1,7 +1,7 @@
 import React from 'react';
 import * as SplashScreen from 'expo-splash-screen';
 import { useFonts, OpenSans_700Bold } from '@expo-google-fonts/open-sans';
-import ShopNavigator from './src/Navigators/ShopNavigator';
+import ShopNavigator from './src/Navigators/ChoferNavigator';
 
 SplashScreen.preventAutoHideAsync();
 
